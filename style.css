@@ -1,0 +1,381 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/**************Fonts***************/
+@font-face {
+  font-family: "Cinzel-VariableFont";
+  src:
+    url("./fonts/Cinzel-VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/Cinzel-VariableFont_wght.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bellefair-Regular";
+  src:
+    url("./fonts/Bellefair-Regular.woff2") format("woff2"),
+    url("./fonts/Bellefair-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Judson-Regular";
+  src:
+    url("./fonts/Judson-Regular.woff2") format("woff2"),
+    url("./fonts/Judson-Regular\ \(2\).woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kranky";
+  src:
+    url("./fonts/Kranky-Regular.woff2") format("woff2"),
+    url("./fonts/Kranky-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/******************************/
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 0px;
+  background-color: #ffbf52;
+  z-index: 100;
+}
+
+.menu {
+  font-family: "Cinzel-VariableFont";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: flex;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  gap: 30px;
+  align-items: center;
+  height: 50px;
+  background-color: #ffbf52;
+}
+
+.menu a {
+  display: block;
+  padding: 5px;
+  color: #562915;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 150px;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 799px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu a {
+    margin: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.logo a {
+  font-family: "Kranky";
+  font-weight: 100;
+  font-style: normal;
+  font-size: 4rem;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  gap: 0px;
+  text-decoration: none;
+  background-color: #7b7434;
+  color: #ffead6;
+}
+
+.logo a:hover {
+  color: #c44c18;
+}
+.menu a:hover {
+  color: #c44c18;
+  transform: translateY(-5px);
+}
+
+body {
+  background-color: #ffead6;
+  padding: 0px;
+}
+
+footer {
+  background-color: #ffbf52;
+  margin: 10px;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  font-family: "Cinzel-VariableFont";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer {
+  display: inline-block;
+  background-color: #7b7434;
+  color: #ffead6;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+.footer:hover {
+  color: #562915;
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-family: "Cinzel-VariableFont";
+  font-weight: 400;
+  font-style: normal;
+  color: #562915;
+  padding: 3px;
+  margin: 2px;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: "Judson-Regular";
+  font-weight: 400;
+  font-style: normal;
+  color: #562915;
+  padding: 3px;
+  margin: 2px;
+  font-size: 2rem;
+}
+
+p {
+  font-family: "Bellefair-Regular";
+  font-weight: 400;
+  font-style: normal;
+  color: #562915;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  text-wrap: pretty;
+}
+li {
+  font-family: "Bellefair-Regular";
+  font-weight: 400;
+  font-style: normal;
+  color: #562915;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1rem;
+  text-wrap: pretty;
+}
+
+video {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/*****************************forside***********/
+
+.infotidslinje {
+  border: 3px solid #7b7434;
+  text-align: center;
+  font-size: 1.3rem;
+  height: 300px;
+  padding: 20px;
+  color: #562915;
+}
+
+.knaptiltidslinje {
+  display: inline-block;
+  background-color: #7b7434;
+  color: #ffead6;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.knaptiltidslinje:hover {
+  color: #562915;
+  transform: translateY(-5px);
+}
+
+.knap3 {
+  display: inline-block;
+  background-color: #7b7434;
+  color: #ffead6;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  align-self: end;
+  transition: transform 0.2s ease;
+}
+
+.knap3:hover {
+  color: #562915;
+  transform: translateY(-5px);
+}
+
+._1167 {
+  border: 3px solid #7b7434;
+}
+
+._1617 {
+  border: 3px solid #7b7434;
+}
+
+._1749 {
+  border: 3px solid #7b7434;
+}
+
+._1794 {
+  border: 3px solid #7b7434;
+}
+
+._1795 {
+  border: 3px solid #7b7434;
+}
+
+._1807 {
+  border: 3px solid #7b7434;
+}
+
+._1905 {
+  border: 3px solid #7b7434;
+}
+
+.h2tidslinje {
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+/********************kirker************/
+
+.tekstkirker {
+  text-align: center;
+  margin-top: 20px;
+}
+/******************boliger*******************/
+
+.min_karusell_knap {
+  display: inline-block;
+  background-color: #7b7434;
+  color: #ffead6;
+  padding: 20px 30px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  align-self: end;
+  transition: transform 0.2s ease;
+}
+
+.min_karusell_knap:hover {
+  color: #562915;
+  transform: translateY(-5px);
+}
+
+/****************ikoniske***********/
+
+.par1 {
+  background-color: #ffbf52;
+}
+
+.par2 {
+  background-color: #da9f86;
+}
+
+.par3 {
+  background-color: #ffbf52;
+}
+
+.amalienborg {
+  background-color: #ffbf52;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.rundetarn {
+  background-color: #ffbf52;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.operahuset {
+  background-color: #ffbf52;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.kaktus {
+  background-color: #da9f86;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.marmorkirken {
+  background-color: #da9f86;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.nyhavn {
+  background-color: #da9f86;
+  margin-bottom: 30px;
+  padding: 20px;
+}
